@@ -1,0 +1,52 @@
+.dashboard {
+    padding: 20px;
+  }
+  
+  .summary-cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  .card {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 10px;
+    flex: 1;
+  }
+  
+  .card img {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .main-content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .new-arrivals {
+    flex: 2;
+  }
+  
+  .book-list {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .book img {
+    width: 80px;
+    height: 100px;
+  }
+  
+  .upcoming-events {
+    flex: 1;
+    background: #f1f1f1;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  

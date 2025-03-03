@@ -1,0 +1,29 @@
+<table>
+    <thead>
+        <tr>
+        <th>     </th>
+        <th> Title </th>
+        <th> Author </th>
+         <th> Book Code </th>
+         <th> Issue Date </th>
+         <th> Return Date </th>
+         <th> Overdue  </th>
+         <th> Total Fine </th>
+         <th> Action </th>
+            </tr>
+    </thead>
+
+    <tbody>
+        <tr *ngFor="let item of tableData">
+            <td><img src={{item.image}} alt="image" width="100px" height="100px"></td>
+            <td>{{ item.title }}</td>
+            <td>{{ item.author }}</td>
+            <td>{{ item.bookCode }}</td>
+            <td>{{ item.issueDate }}</td>
+            <td>{{ item.returnDate }}</td>
+            <td>{{ item.overdue }}</td>
+            <td style="color: red">{{item.totalFine}}</td>
+            <td><button>Pay now</button></td>
+        </tr>
+    </tbody>
+</table>

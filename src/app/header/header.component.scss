@@ -1,0 +1,57 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+  }
+  
+  .search-container {
+    flex: 1; /* Takes available space */
+    display: flex;
+    justify-content: center;
+  }
+  
+  .search-container input {
+    width: 50%;
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    outline: none;
+  }
+  
+  /* Right section adjustments */
+  .right-section {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Reduce spacing */
+    min-width: 150px; /* Restrict how far right it can go */
+    justify-content: flex-end;
+  }
+  
+  .notification-icon {
+    cursor: pointer;
+  }
+  
+  .profile-img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .username {
+    font-weight: bold;
+    white-space: nowrap; /* Prevents wrapping */
+    max-width: 100px; /* Prevents too much space */
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  

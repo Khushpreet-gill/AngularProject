@@ -1,0 +1,16 @@
+<header class="header">
+    <div class="left-section">
+      <!-- Logo or brand name (if needed) -->
+    </div>
+  
+    <div class="search-container">
+      <input type="text" placeholder="Search" (input)="onSearch($event)" />
+    </div>
+  
+    <div class="right-section">
+      <i class="icon notification-icon">🔔</i> <!-- Notification Icon -->
+      <img [src]="profileImage" alt="Profile" class="profile-img" />
+      <span class="username">{{ username }}</span>
+    </div>
+  </header>
+  

@@ -1,0 +1,23 @@
+<div class ="navbar">
+    <div class="logo">
+        <img src="" alt="logo" class="logo-img">
+
+    </div>
+    <div class="menu">
+    <h3>MENU</h3>
+    <ul>
+        <li *ngFor="let item of menuItems" [class.active]="item.active">
+            <i [class] = "item.icon"></i> {{item.label}}
+        </li>
+    </ul>
+</div>
+<hr>
+<div class="other">
+    <h3>OTHER</h3>
+    <ul>
+        <li *ngFor="let item of otherItems">
+            <i [class]=""item.icon></i> {{item.label}}
+        </li>
+    </ul>
+</div>
+</div>
